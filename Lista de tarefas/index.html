@@ -5,21 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Lista de Tarefas</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
   <section class="container">
-    <h1>Meu timer</h1>
-    <p>00:00:00</p>
+    <h1>Lista de Tarefas</h1>
     <p>
-      <button class="iniciar">Iniciar</button>
-    <button class="pausar">Pausar</button>
-    <button class="zerar">Zerar</button>
+    <input type="text" id="input-tarefa" placeholder="Digite uma tarefa">
+
+    <button id="btn">Adicionar tarefa</button>
     </p>
-  </section>
+
+  <ul id="tarefas">
+    </ul>
+
+
 
   <script src="./assets/js/main.js"></script>
 </body>
