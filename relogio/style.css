@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 700px;
+    background-color: rgb(14, 14, 110);
+    border-radius: 400px;
+}
+
+ p{
+    font-size: 50px;
+    color: aliceblue;
+}

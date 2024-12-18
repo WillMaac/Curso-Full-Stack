@@ -7,24 +7,32 @@ function getTimeFromSeconds(segundos){
 
 }
 
-console.log(getTimeFromSeconds(10));
+function iniciarRelogio(){
+    const timer = setInterval(function(){
+        segundos++;
+        relogio.innerHTML = getTimeFromSeconds(segundos);
+    }, 1000)
+}
 
 
 const relogio = document.querySelector('.relogio');
 const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
+let segundos = 0;
+let timer;
 
 iniciar.addEventListener('click', function(event) {
-relogio.innerHTML = 'cliquei aqui';
+ iniciarRelogio();
 });
 
 pausar.addEventListener('click', function(event) {
-alert('cliquei');
+clearInterval(timer);
 });
 
 zerar.addEventListener('click',  function(event) {
-    alert('cliquei');
+    clearInterval(timer);
+    relogio.innerHTML = '00:00:00';
 });
 
 
