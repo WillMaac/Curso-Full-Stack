@@ -36,3 +36,4 @@ function f3Callback(){
     console.log("Olá mundo!");
     
 }
+  

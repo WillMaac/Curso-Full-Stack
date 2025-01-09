@@ -1,13 +1,12 @@
-const nome = 'Will';
+const nome = "Will";
 
-const meuNome = () =>{
-    
-    console.log(nome);    
-}
+const meuNome = () => {
+  console.log(nome);
+};
 
-const usameuNome = () =>{
-    let nome = 'Maac'
-    meuNome();
-}
+const usameuNome = () => {
+  let nome = "Maac";
+  meuNome();
+};
 
 usameuNome();

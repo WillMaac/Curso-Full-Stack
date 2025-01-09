@@ -1,3 +1,5 @@
-const multiplicar = (x,y) => x * y;
+const somar =  (a, b) => a+ b;
 
-console.log(multiplicar(10, 10));
+console.log(somar(10, 10));
+
+  

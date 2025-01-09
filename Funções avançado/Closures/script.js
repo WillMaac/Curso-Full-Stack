@@ -10,4 +10,3 @@ console.dir(funcao);
 console.dir(funcao2);
 
 console.log(funcao(), funcao2());
-
