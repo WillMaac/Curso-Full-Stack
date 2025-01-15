@@ -5,5 +5,5 @@ a1.forEach(valor =>{
 });
 
 console.log(total);
-
+ 
 
