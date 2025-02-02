@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário Aleatório</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de Usuário</h1>
+    <div class="container">
+        <h2>Usuário Gerado</h2>
+        <div class="card">
+            <img id="user-image" src="" alt="Foto do usuário">
+            <p><strong>Nome:</strong> <span id="user-name"></span></p>
+            <p><strong>E-mail:</strong> <span id="user-email"></span></p>
+            <p><strong>Localização:</strong> <span id="user-location"></span></p>
+        </div>
+        <button onclick="loadUser()">Gerar Novo Usuário</button>
+    </div>
+    <script src="./assets/js/api.js"></script>
+</body>
+</html>
