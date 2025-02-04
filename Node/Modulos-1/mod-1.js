@@ -7,7 +7,8 @@ exports.name = name;
 exports.lastName = lastName;
 this.age = 25;
 exports.sayName = sayName;
-console.log(exports);
+
+//console.log(exports);
 
 
 class Person{

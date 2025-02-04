@@ -1,0 +1,1 @@
+module.exports = somar = (x, y) => x + y;
