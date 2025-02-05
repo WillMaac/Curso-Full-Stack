@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const port = 4000;
 
+app.use(
+    express.urlencoded(
+        {extended: true}));
+
 app.get('/', (req, res) => {
     res.send(`
         <form action="/" method="POST">
@@ -11,11 +15,17 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-res.send('Recebi o formulário')
+    console.log(req.body);
+    
+res.send(`Você enviou: ${req.body.nome}`)
 });
 
-app.get('/contato', (resq, res) => {
-res.send('Obrigado por entrar em contato com a gente.')
+app.get('/teste/:idUsuarios?', (req, res) => {
+    console.log(req.params);
+    console.log(req.query);
+    
+    
+    res.send(req.params.idUsuarios)
 })
 
 app.listen(port, () => {
