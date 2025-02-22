@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: #0a4f70;
+}
+
+h1{
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+  color: yellow;
+}
